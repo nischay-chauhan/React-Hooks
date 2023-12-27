@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 function Counter() {
   const [count, setCount] = useState(() => {
     const storedCount = sessionStorage.getItem('count');
@@ -51,6 +51,15 @@ function Counter() {
       <button className='mt-4 bg-gray-500 hover:bg-gray-700 text-white font-bold text-xl py-2 px-4 rounded' onClick={resetTotal}>
         Reset Total
       </button>
+      <div className='container '> 
+      <p className="text-xl mt-6  text-gray-700">
+        The counter component uses the useState hook to manage the state of two variables: count and doc. count represents the total, while doc is the value entered by the user. The component updates the count based on the user input, and the total is persisted using sessionStorage. Additionally, a reset button allows setting the total back to zero.
+      </p>
+
+      </div>
+      <Link to="/useState/api" className="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold text-xl py-2 px-4 rounded">
+        Next Example
+      </Link>
     </div>
   );
 }
