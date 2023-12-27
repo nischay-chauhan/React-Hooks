@@ -57,7 +57,7 @@ function Counter() {
       </p>
 
       </div>
-      <Link to="/useState/api" className="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold text-xl py-2 px-4 rounded">
+      <Link to="/apicall" className="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold text-xl py-2 px-4 rounded">
         Next Example
       </Link>
     </div>
