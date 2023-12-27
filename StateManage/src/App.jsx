@@ -5,6 +5,7 @@ import Counter from './components/useState/counter.jsx';
 import Home from "./page/Home.jsx";
 import ApiCall from "./components/useState/apiCall.jsx";
 import Reducer from "./components/useReducer/reducer.jsx";
+import Memo from "./components/useMemo&callback/Memo.jsx";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: 'reducer',
     element: <Reducer />,
+  },
+  {
+    path : "memo",
+    element : <Memo />
   },
 ]);
 
