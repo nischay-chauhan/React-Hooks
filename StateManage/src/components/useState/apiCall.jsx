@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -53,6 +54,7 @@ const ApiCall = () => {
       >
         Next
       </Link>
+      <Link to={'/'} className="text-blue-500 mt-4" children={"Go to home page"} />
     </div>
   );
 };

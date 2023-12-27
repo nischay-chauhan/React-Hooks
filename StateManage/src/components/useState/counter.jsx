@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import  { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 function Counter() {
@@ -60,6 +61,7 @@ function Counter() {
       <Link to="/apicall" className="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold text-xl py-2 px-4 rounded">
         Next Example
       </Link>
+      <Link to={'/'} className="text-blue-500 mt-4" children={"Go to home page"} />
     </div>
   );
 }

@@ -1,19 +1,27 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="container mx-auto">
-    <h1 className="text-8xl font-bold">
-    State Management Exercise
-    </h1> 
-    <ul className="text-3xl" >
-        <Link className="text-blue-500 " to={'/usestate'}><li>UseState Example</li></Link>
-    </ul>
-    <ul className="text-3xl" >
-        <Link className="text-blue-500 " to={'/usereducer'}><li>UseReducer Example</li></Link>
-    </ul>
+    <div className="h-screen flex flex-col justify-center items-center bg-gradient-to-t from-blue-500 to-purple-700 text-white">
+      <h1 className="text-8xl font-bold mb-8">
+        State Management Exercise
+      </h1>
+      <ul className="text-3xl list-none p-0">
+        <li>
+          <Link className="text-yellow-300 hover:underline" to="/usestate">
+            UseState Example
+          </Link>
+        </li>
+      </ul>
+      <ul className="text-3xl list-none p-0 mt-4">
+        <li>
+          <Link className="text-yellow-300 hover:underline" to="/reducer">
+            UseReducer Example
+          </Link>
+        </li>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
