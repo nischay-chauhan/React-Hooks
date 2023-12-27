@@ -7,7 +7,10 @@ const Home = () => {
     State Management Exercise
     </h1> 
     <ul className="text-3xl" >
-        <Link className="text-blue-500 " to={'/useState'}><li>UseState Example</li></Link>
+        <Link className="text-blue-500 " to={'/usestate'}><li>UseState Example</li></Link>
+    </ul>
+    <ul className="text-3xl" >
+        <Link className="text-blue-500 " to={'/usereducer'}><li>UseReducer Example</li></Link>
     </ul>
     </div>
   )

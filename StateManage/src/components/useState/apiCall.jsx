@@ -23,13 +23,16 @@ const ApiCall = () => {
 
   return (
     <div className="bg-black w-full h-full flex flex-col justify-center items-center text-white">
-      <p className=" border p-4  text-xl mb-4 text-gray-500">
-        This component demonstrates the use of the useState hook to manage the state of the data and loading variables. The data state holds the fetched product information, and loading indicates whether the data is still being loaded.
-      </p>
+      
       {loading ? (
         <p>Loading...</p>
       ) : (
+        <div>
+        <p className=" border p-4  text-xl mb-4 text-gray-500">
+        This component demonstrates the use of the useState hook to manage the state of the data and loading variables. The data state holds the fetched product information, and loading indicates whether the data is still being loaded.
+      </p>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-6 gap-4">
+        
           {Array.isArray(data) && data.length > 0 ? (
             data.map((item) => (
               <div key={item.id} className="bg-gray-800 p-4 rounded shadow">
@@ -41,6 +44,7 @@ const ApiCall = () => {
           ) : (
             <p>No data available</p>
           )}
+        </div>
         </div>
       )}
       <Link
