@@ -1,4 +1,4 @@
-/* eslint-disable react/no-children-prop */
+import PropTypes from 'prop-types';
 import { useState, useMemo, useCallback } from "react";
 import { Link } from "react-router-dom";
 const SortedList = ({ list, sortFunc }) => {
@@ -14,6 +14,11 @@ const SortedList = ({ list, sortFunc }) => {
       Sorted List: {sortedList.join(", ")}
     </div>
   );
+};
+
+SortedList.propTypes = {
+  list: PropTypes.array.isRequired,
+  sortFunc: PropTypes.func.isRequired,
 };
 
 //If you want to see you firefox lag run this function 
@@ -67,7 +72,7 @@ const Memo = () => {
       </button>
       <div className="mt-4 text-3xl font-bold text-white">Total: {countTotal}</div>
 
-      <Link to={'/'} className="text-black-500 mt-4" children={"Go to home page"} />
+      <Link to={'/'} className="text-black-500 mt-4" >Go to home page</Link>
     </div>
   );
 };
