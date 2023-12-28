@@ -27,7 +27,13 @@ const Home = () => {
             UseMemo & Callback Example
           </Link>
         </li>
-        
+      </ul>
+      <ul className="text-3xl list-none p-0 mt-4">
+        <li>
+          <Link className="text-yellow-300 hover:underline" to="/effect">
+            UseEffect Example
+          </Link>
+        </li>
       </ul>
     </div>
   );
