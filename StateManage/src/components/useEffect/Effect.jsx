@@ -1,4 +1,5 @@
 import { useEffect , useState } from "react";
+import { Link } from "react-router-dom";
 const array = [
   { key: '1', type: 'planet', value: 'Tatooine' },
   { key: '2', type: 'planet', value: 'Alderaan' },
@@ -24,7 +25,7 @@ const Effect = () => {
   };
 
   useEffect(() => {
-    setFilteredArray((_) => {
+    setFilteredArray(() => {
       const newArray = array
         .filter((item) => item.value.includes(inputValue))
         .filter((item) => item.type.includes(inputType));
@@ -40,7 +41,7 @@ const Effect = () => {
   ));
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500">
       <div className="bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold mb-4">useEffect use case</h2>
         <h3 className="text-xl mb-4">Running on state change: live filtering</h3>
@@ -77,7 +78,15 @@ const Effect = () => {
             {listItems}
           </tbody>
         </table>
+        
       </div>
+      <div className="flex flex-col">
+      <Link to={'/effect1'} className="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold text-xl py-2 px-4 rounded" >Next Example</Link>
+      <Link to={'/'} className="px-2 text-queen-blue-500 hover:text-white mt-4" >Go to home page</Link>
+
+      </div>
+
+
     </div>
   );
 };

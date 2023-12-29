@@ -35,6 +35,13 @@ const Home = () => {
           </Link>
         </li>
       </ul>
+      <ul className="text-3xl list-none p-0 mt-4">
+        <li>
+          <Link className="text-yellow-300 hover:underline" to="/ref">
+            UseRef Example
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };

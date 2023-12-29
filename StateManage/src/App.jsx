@@ -7,6 +7,8 @@ import ApiCall from "./components/useState/apiCall.jsx";
 import Reducer from "./components/useReducer/reducer.jsx";
 import Memo from "./components/useMemo&callback/Memo.jsx";
 import Effect from "./components/useEffect/Effect.jsx";
+import Effect1 from "./components/useEffect/Effect1.jsx";
+import UseRef from "./components/useRef/UseRef.jsx";
 
 
 const router = createBrowserRouter([
@@ -33,7 +35,15 @@ const router = createBrowserRouter([
   {
     path : "effect",
     element : <Effect />  
-  }
+  },
+  {
+    path : "effect1",
+    element:<Effect1 />
+  },
+  {
+    path : "ref",
+    element : <UseRef />
+  },
 ]);
 
 function App() {
