@@ -32,7 +32,7 @@ const router = createBrowserRouter([
   },
   {
     path : "effect",
-    element : <Effect />
+    element : <Effect />  
   }
 ]);
 
